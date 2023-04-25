@@ -1,6 +1,6 @@
 from rest_framework.viewsets import ModelViewSet
 
-from livraria.models import Categoria, Editora, Autor, Livro
+from livraria.models import Categoria,Editora,Livro,Autor
 from livraria.serializers import CategoriaSerializer, EditoraSerializer, AutorSerializer, LivroSerializer
 
 

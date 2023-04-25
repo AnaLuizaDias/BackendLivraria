@@ -2,7 +2,12 @@ from rest_framework.serializers import ModelSerializer
 from rest_framework.viewsets import ModelViewSet
 
 
-from livraria.models import Categoria, Editora, Autor, Livro
+from livraria.models import  Autor, Categoria, Editora, Livro
+
+class AutorSerializer(ModelSerializer):
+    class Meta:
+        model = Autor
+        fields = "__all__"
 
 class CategoriaSerializer(ModelSerializer):
     class Meta:
@@ -35,7 +40,3 @@ class LivroViewSet(ModelViewSet):
             return LivroDetailSerializer
         return LivroSerializer
     
-class AutorSerializer(ModelSerializer):
-    class Meta:
-        model = Autor
-        fields = "__all__"
