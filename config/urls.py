@@ -5,7 +5,6 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
 )
 
-
 from rest_framework.routers import DefaultRouter
 
 from livraria.views import CategoriaViewSet, EditoraViewSet, AutorViewSet, LivroViewSet
