@@ -1,10 +1,6 @@
 from django.db import models
 
-
-    
-
-
-
+from livraria.models import Autor, Categoria, Editora
 
 
 class Livro(models.Model):
@@ -18,4 +14,5 @@ class Livro(models.Model):
 
     def __str__(self):
         return f"{self.titulo} ({self.quantidade})"
+
 
