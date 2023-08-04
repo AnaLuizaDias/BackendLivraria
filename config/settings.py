@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+AUTH_USER_MODEL = "usuario.Usuario"
 
 # Application definition
 
@@ -37,11 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'livraria',
-    "usuario",
     'corsheaders',
+    'rest_framework',
     "rest_framework_simplejwt",
+    "usuario",
+    'livraria',
 ]
 
 MIDDLEWARE = [
@@ -140,5 +141,3 @@ REST_FRAMEWORK = {
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ),
 }
-
-AUTH_USER_MODEL = "usuario.Usuario"
